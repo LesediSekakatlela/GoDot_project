@@ -8,11 +8,16 @@
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 4.48987 )
 
 [node name="Car" parent="." instance=ExtResource( 2 )]
+visible = false
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
+
+[node name="CarStart1" type="Position2D" parent="."]
+position = Vector2( -33.6738, 262.656 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
