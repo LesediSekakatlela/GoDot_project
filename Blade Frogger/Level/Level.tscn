@@ -7,7 +7,7 @@
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, 4.48987 )
+position = Vector2( 644.294, 408.577 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -15,19 +15,19 @@ current = true
 [node name="StartPositions" type="Node" parent="."]
 
 [node name="CarStart1" type="Position2D" parent="StartPositions"]
-position = Vector2( 1086.54, 267.146 )
+position = Vector2( 1070.83, 273.881 )
 
 [node name="CarStart2" type="Position2D" parent="StartPositions"]
-position = Vector2( 1075.32, 556.741 )
+position = Vector2( 1082.05, 630.824 )
 
 [node name="CarStart3" type="Position2D" parent="StartPositions"]
-position = Vector2( -220.003, -145.92 )
+position = Vector2( -112.246, 35.9188 )
 
 [node name="CarStart4" type="Position2D" parent="StartPositions"]
-position = Vector2( 1064.09, 83.0622 )
+position = Vector2( 1070.83, 166.124 )
 
 [node name="CarStart5" type="Position2D" parent="StartPositions"]
-position = Vector2( -222.248, 253.677 )
+position = Vector2( -107.757, 523.068 )
 
 [node name="CarTimers" type="Node" parent="."]
 
@@ -52,7 +52,7 @@ wait_time = 2.0
 autostart = true
 
 [node name="PlayerStartPos" type="Position2D" parent="."]
-position = Vector2( 621.844, 397.352 )
+position = Vector2( 639.804, 406.331 )
 
 [connection signal="timeout" from="CarTimers/Timer1" to="." method="_on_Timer1_timeout"]
 [connection signal="timeout" from="CarTimers/Timer2" to="." method="_on_Timer2_timeout"]
