@@ -7,11 +7,11 @@ func _process(delta):
 	
 	if Input.is_action_pressed("ui_left"):
 		velocity.x -= 1
-	if Input.is_action_just_pressed("ui_up"):
+	if Input.is_action_pressed("ui_up"):
 		velocity.y -= 1
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
-	if Input.is_action_just_pressed("ui_down"):
+	if Input.is_action_pressed("ui_down"):
 		velocity.y += 1
 	move_and_slide(velocity.normalized() * speed)
 	player_animation(velocity)
